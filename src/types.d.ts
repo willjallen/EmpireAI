@@ -18,3 +18,17 @@ declare namespace NodeJS {
     log: any;
   }
 }
+
+// Body types
+type Part = "WORK" | "MOVE" | "CARRY" | "ATTACK" | "RANGED_ATTACK" | "HEAL" | "CLAIM" | "TOUGH";
+
+type Body = [Part];
+
+// Task types
+type Task = "MOVE" | "MINE" | "BUILD" | "UPGRADE";
+
+// Level types
+type Level = 1 | 2 | 3 | 4 | 5;
+
+// Meta types [Room, x, y]
+type WorldPos = [string, number, number]
